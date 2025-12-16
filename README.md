@@ -11,8 +11,8 @@ However, the conducted experiments also demonstrated that fine-tuning itself is 
 To address this limitation, RAG was incorporated into the system to allow it to dynamically access instructional material at inference time. The hybrid configuration that combines fine-tuning with retrieval exhibits balanced improvements across semantic accuracy, response fluency, and factual consistency, while sustaining acceptable inference latency for educational use cases.
 The hybrid model shows an overall good performance, with a semantic accuracy of 81.8%, better than the RAG-only configuration and competitive with fine-tuning alone. This also indicates that retrieval augmentation is serving its purpose of complementing fine-tuning by enhancing contextual relevance while retaining coherent instructional responses. The improvements in BLEU and ROUGE-L scores further indicate an increase in structural alignment with reference answers compared to the base RAG setup.
 
-The instructional prompt used:
- prompt = f"""
+## The instructional prompt used:
+- prompt = f"""
     You are a serious knowledgeable teaching assistant, your job is to answer every single question asked by a student using the provided context.
     Here, is a strict follow up, You can never skip any question.
     I repeat, not a single question should be left unanswered.
@@ -25,12 +25,13 @@ The instructional prompt used:
 
 This work, therefore, substantiates that TLMs can effectively support education question answering with proper selection and augmentation by fine-tuning and retrieval mechanisms without depending on large-scale language models. The results reveal the practical viability of TLM-based systems in classroom applications and form a starting point for further research in scalable low-resource educational assistants.
 
-Folder Structure:
-/dataset/dataset/evaluation_datasetUnique.jsonl - It contains the JSONL dataset having 253 objects ensuring 40% factual, 40% conceptual, 20% reasoning based questions, across all four subjects to ensure academic fairness while traing the models.
-/qwen_baseModel_Testing/evaluation_qwenBase_model.py - This is the code base file, which generally has how the base model was trained. It only has the qwen2.5-1.5B-Instruct model as it was the best among all trained and selected for finetuning and further experimentation.
-/qwen_finetunedOnly_testing/evaluate_qwen_finetuned.py - This is the code base file, for the evaluation of finetuned model.
-/rag+qwenFinetuned_testing/evaluate_qwen_hybrid_rag.py - This is the code base file, where hybrid approach was used i.e., incorporating RAG with finetuned Qwen model.
-/rag_testing/ragMetrics_testing.py - This is the code base file, where the Qwen base variant model integrated with RAG was used to for the evaluation.
+## Folder Structure:
+
+- /dataset/dataset/evaluation_datasetUnique.jsonl - It contains the JSONL dataset having 253 objects ensuring 40% factual, 40% conceptual, 20% reasoning based questions, across all four subjects to ensure academic fairness while traing the models.
+- /qwen_baseModel_Testing/evaluation_qwenBase_model.py - This is the code base file, which generally has how the base model was trained. It only has the qwen2.5-1.5B-Instruct model as it was the best among all trained and selected for finetuning and further experimentation.
+- /qwen_finetunedOnly_testing/evaluate_qwen_finetuned.py - This is the code base file, for the evaluation of finetuned model.
+- /rag+qwenFinetuned_testing/evaluate_qwen_hybrid_rag.py - This is the code base file, where hybrid approach was used i.e., incorporating RAG with finetuned Qwen model.
+- /rag_testing/ragMetrics_testing.py - This is the code base file, where the Qwen base variant model integrated with RAG was used to for the evaluation.
 
 
 
