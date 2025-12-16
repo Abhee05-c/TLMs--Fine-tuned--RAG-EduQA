@@ -18,7 +18,6 @@ The instructional prompt used:
     I repeat, not a single question should be left unanswered.
     Always provide a clear, concise, detail explanation like a teacher and provide a clear cum easy explanation to the student's question everytime you were asked, 
     and answer always with the context below only:
-
     Context:{context}
     Question: {question}
     Answer:  
