@@ -1,0 +1,11 @@
+/outputs
+/evalnv
+/cc.py
+/dataset/evaluation_dataset.jsonl
+/rag+qwenFinetuned_testing/Evaluation_result_per_question
+/rag+qwenFinetuned_testing/raq_qwenFinetuned.txt
+/rag_testing/rag_qwen.txt
+/qwen_finetunedOnly_testing/results_qwen_finetuned0.txt
+/qwen_baseModel_Testing/results_qwen_base.json
+/InitialTesting_AllModels
+/.vscode
