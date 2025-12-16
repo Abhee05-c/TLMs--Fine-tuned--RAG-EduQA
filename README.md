@@ -27,7 +27,7 @@ This work, therefore, substantiates that TLMs can effectively support education 
 
 ## Folder Structure:
 
-- /dataset/dataset/evaluation_datasetUnique.jsonl - It contains the JSONL dataset having 253 objects ensuring 40% factual, 40% conceptual, 20% reasoning based questions, across all four subjects to ensure academic fairness while traing the models.
+- /dataset/evaluation_datasetUnique.jsonl - It contains the JSONL dataset having 253 objects ensuring 40% factual, 40% conceptual, 20% reasoning based questions, across all four subjects to ensure academic fairness while traing the models.
 - /qwen_baseModel_Testing/evaluation_qwenBase_model.py - This is the code base file, which generally has how the base model was trained. It only has the qwen2.5-1.5B-Instruct model as it was the best among all trained and selected for finetuning and further experimentation.
 - /qwen_finetunedOnly_testing/evaluate_qwen_finetuned.py - This is the code base file, for the evaluation of finetuned model.
 - /rag+qwenFinetuned_testing/evaluate_qwen_hybrid_rag.py - This is the code base file, where hybrid approach was used i.e., incorporating RAG with finetuned Qwen model.
