@@ -37,7 +37,7 @@ bnb_config = BitsAndBytesConfig(
 )
 
 # Load base model + tokenizer
-print("🔹 Loading base Qwen model in 4-bit mode...")
+print("Loading base Qwen model in 4-bit mode")
 tokenizer = AutoTokenizer.from_pretrained(base_model_id, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
@@ -46,7 +46,7 @@ model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True
 )
 
-print("🔹 Attaching fine-tuned LoRA adapter...")
+print("Attaching fine-tuned LoRA adapter weights")
 model = PeftModel.from_pretrained(model, adapter_path)
 model.eval()
 
