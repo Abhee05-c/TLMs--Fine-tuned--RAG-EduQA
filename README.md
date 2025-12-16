@@ -18,9 +18,9 @@ The hybrid model shows an overall good performance, with a semantic accuracy of 
     I repeat, not a single question should be left unanswered.
     Always provide a clear, concise, detail explanation like a teacher and provide a clear cum easy explanation to the student's question everytime you were asked, 
     and answer always with the context below only:
-    Context:{context}
-    Question: {question}
-    Answer:  
+    - Context:{context}
+    - Question: {question}
+    - Answer:  
     """
 
 This work, therefore, substantiates that TLMs can effectively support education question answering with proper selection and augmentation by fine-tuning and retrieval mechanisms without depending on large-scale language models. The results reveal the practical viability of TLM-based systems in classroom applications and form a starting point for further research in scalable low-resource educational assistants.
