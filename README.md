@@ -1,6 +1,7 @@
-<img width="1054" height="580" alt="image" src="https://github.com/user-attachments/assets/c9e46b14-6bc9-453f-bfc1-33160255b599" />
-
 This is a project based on testing and evaluation of Tiny Language Models(TLMs) to generate context specific answers ensuring factual grounding on a educational synthetically generated JSONL datset that is usually developed from teacher authored/written class notes from four subjects namely AI, Python, Operating Systems ,OOPs. To ensure Factual awareness for the generated answers, the models were incorporated with RAG in subsequent experiments.
+
+- The Context Specific Output Generation Pipeline Operated in 4 Phases
+<img width="1054" height="580" alt="image" src="https://github.com/user-attachments/assets/c9e46b14-6bc9-453f-bfc1-33160255b599" />
 
 ## Workline Summary:
 - It started with 6 baseline models, namely TinyLlama-1.1B-Chat-v1.0, flan-t5-small, SmolLM2-135M, SmolLM2-360M-Instruct4, SmolLM2-1.7B-Instruct, and Qwen2.5-1.5B-Instruct. Out of which , Qwen-2.5-1.5B-Instruct outperformed all others and was chosen for further experimentation.
