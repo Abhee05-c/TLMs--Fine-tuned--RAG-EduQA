@@ -9,3 +9,4 @@
 /qwen_baseModel_Testing/results_qwen_base.json
 /InitialTesting_AllModels
 /.vscode
+/.gitignore
