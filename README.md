@@ -39,6 +39,9 @@ Frontend integration make the platform usable and accessible in actual education
 - /qwen_finetunedOnly_testing/evaluate_qwen_finetuned.py - This is the code base file, for the evaluation of finetuned model.
 - /rag+qwenFinetuned_testing/evaluate_qwen_hybrid_rag.py - This is the code base file, where hybrid approach was used i.e., incorporating RAG with finetuned Qwen model.
 - /rag_testing/ragMetrics_testing.py - This is the code base file, where the Qwen base variant model integrated with RAG was used to for the evaluation.
+- /DocChat_frontend/html pages/ - Contains all HTML pages for the system that provides the structure of the interface for submitting queries and viewing responses.
+- /DocChat_frontend/style/ - Contains CSS styles used to design a clean and user-friendly interface.
+- /DocChat_frontend/functionality/ - Contains JavaScript files that handle the core frontend functionality, enabling interactivity such as taking inputs(pdf/text),taking student queries,and dynamically displaying outputs.
 
 
 
