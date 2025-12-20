@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="docchat logo.jpg" type="image/x-icon">
+</head>
+
+<body class="back">
+    <header>
+        <img src="docchat logo.jpg" alt="Logo" width="50" height="50" class="logo">
+        &nbsp;&nbsp;DocChat
+
+    </header>
+    <!-- Moving background layers -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!-- Star burst container -->
+    <div id="star-burst"></div>
+
+    <div class="steps-container">
+        <div class="step active">
+            <span class="step-number">1</span>
+            <span class="step-label">Content</span>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <span class="step-label">Train</span>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <span class="step-label">Chat</span>
+        </div>
+    </div>
+
+    <div class="card content-card popup-card">
+        <h2>Add your content</h2>
+        <p>Upload a PDF or paste text below. We'll use this to train your chatbot.</p>
+
+        <div class="drop-area">
+            <span class="icon">💾</span> Drop PDF here or browse
+            <br><br>
+            <div><input type="file" id="pdfInput" accept="application/pdf">
+                <label for="pdfInput" class="custom-btn">📄 Upload PDF</label>
+                <div id="fileDetails" class="filedetails"></div>
+            </div>
+        </div>
+
+        <p class="separator-text">Or paste text</p>
+
+        <textarea name="text" class="text-input" id="textInput" placeholder="Paste your text here..."></textarea>
+
+        <div class="input-footer">
+            <p class="char-limit">Max 50,000 characters. Your data stays private.</p>
+            <div class="actions">
+                <button type="button" id="Clean" class="btn btn-outline-info">Clean</button>
+                <button type="button" id="train1" class="btn btn-outline-success">🚀Train</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ready-card popup-card">
+        <p>Ready? Add a PDF or paste text, then click Train to continue.</p>
+        <button type="button" id="train2" class="btn btn-success ">→Train</button>
+    </div>
+    </div>
+    <script src="aap.js"></script>
+    <script src="click.js"></script>
+</body>
+
+</html>

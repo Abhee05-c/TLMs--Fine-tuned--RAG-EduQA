@@ -26,6 +26,12 @@ The hybrid model shows an overall good performance, with a semantic accuracy of 
 
 This work, therefore, substantiates that TLMs can effectively support education question answering with proper selection and augmentation by fine-tuning and retrieval mechanisms without depending on large-scale language models. The results reveal the practical viability of TLM-based systems in classroom applications and form a starting point for further research in scalable low-resource educational assistants.
 
+## Frontend Integration for Educational Access:
+
+Frontend integration make the platform usable and accessible in actual educational environments by presenting the model outputs in a way that makes it easy for students to interact with the question-answering process. This assisted in bridging the gap between backend model experimentation and actual educational usage, ensuring that students can effectively access the generated responses for learning and revision.
+
+
+
 ## Folder Structure:
 
 - /dataset/evaluation_datasetUnique.jsonl - It contains the JSONL dataset having 253 objects ensuring 40% factual, 40% conceptual, 20% reasoning based questions, across all four subjects to ensure academic fairness while traing the models.
@@ -33,6 +39,9 @@ This work, therefore, substantiates that TLMs can effectively support education 
 - /qwen_finetunedOnly_testing/evaluate_qwen_finetuned.py - This is the code base file, for the evaluation of finetuned model.
 - /rag+qwenFinetuned_testing/evaluate_qwen_hybrid_rag.py - This is the code base file, where hybrid approach was used i.e., incorporating RAG with finetuned Qwen model.
 - /rag_testing/ragMetrics_testing.py - This is the code base file, where the Qwen base variant model integrated with RAG was used to for the evaluation.
+- /DocChat_frontend/html pages/ - Contains all HTML pages for the system that provides the structure of the interface for submitting queries and viewing responses.
+- /DocChat_frontend/style/ - Contains CSS styles used to design a clean and user-friendly interface.
+- /DocChat_frontend/functionality/ - Contains JavaScript files that handle the core frontend functionality, enabling interactivity such as taking inputs(pdf/text),taking student queries,and dynamically displaying outputs.
 
 
 
