@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="docchat logo.jpg" type="image/x-icon">
+</head>
+
+<body class="back">
+  <header>
+    <img src="docchat logo.jpg" alt="Logo" width="50" height="50" class="logo">
+    &nbsp;&nbsp;DocChat
+  </header>
+  <!-- Moving background layers -->
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <!-- Star burst container -->
+  <div id="star-burst"></div>
+  <div class="steps-container">
+    <div class="step">
+      <span class="step-number">1</span>
+      <span class="step-label">Content</span>
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <span class="step-label">Train</span>
+    </div>
+    <div class="step active">
+      <span class="step-number">3</span>
+      <span class="step-label">Chat</span>
+    </div>
+  </div>
+  <div class="container-t popup-card">
+    <div class="header-t">
+      <div><strong>✅Assistant is ready</strong></div>
+    </div>
+
+    <div class="section-t">
+      <h3>Your processed content</h3>
+
+      <div class="file-box">
+        <span>Uploaded Text <span class="ext">.txt</span></span>
+        <button class="btn btn-outline-success" disabled>👁️Show text</button>
+        <div id="st" class="hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="file-box">
+        <span>Uploaded Document <span class="ext">.pdf</span></span>
+        <button class="btn btn-outline-success" disabled>👁️Show PDF</button>
+        <div id="pt1" class="hidden">
+          <p></p>
+        </div>
+      </div>
+      <div class="chat-section">
+        <div class="chat-header">🤖Personal Assistant</div>
+        <div class="chat-window" id="chat-window">
+          <div class="bot-message">Hello, how may I help you?</div>
+        </div>
+
+        <div class="input-bar">
+          <input type="text" id="user-input" placeholder="Type your message...">
+          <button id="send">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="chat.js"></script>
+    <script src="click.js"></script>
+</body>
+
+</html>
